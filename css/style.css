@@ -1,3 +1,4 @@
+/* заголовки та параграфи - скидаемо стандартниі відступи */
 h1,
 h2,
 h3,
@@ -9,7 +10,7 @@ p {
 }
 
 
-/* убираем точечки и подчеркивание */
+/* убираем точечки и подчеркивание. Та зовнішній відступ, внутр паддінг */
 .list {
     list-style: none;
     margin: 0;
@@ -18,6 +19,11 @@ p {
 
 .link {
     text-decoration: none;
+}
+
+/* скидаемо малюнки */
+img {
+    display: block;
 }
 
 :root {
@@ -46,8 +52,28 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+
+    outline: 3px solid tomato;    
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
  /* ----------------------Верхня частина ХЕДЕР---------------------  */
 
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    height: 80px;
+
+}
  /* Логотип */
 .header-logo {
     color: var(--button-color-web-second);
@@ -56,6 +82,8 @@ body {
     font-size: 26px;
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
+
+    margin-right: 93px;
 }
 
 .logo-header {
@@ -64,7 +92,22 @@ body {
 
 /* Навигация */
 
+.header-nav {
+    margin-right: auto;
+    
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
 .nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--color-font-h2-h3-name);
     
     font-weight: 500;
@@ -83,6 +126,11 @@ body {
 
 /* ссылка на сайт и тел */
 
+.header-group {
+    display: flex;
+    gap: 50px;
+}
+
 .header-contact {
     color: var(--color-font-contact-p);
     font-weight: 500;
@@ -98,10 +146,26 @@ body {
 
 /* ----------------------------Секція 1/4 (Герой - HERO)----------------- */
 
+
 /* секция герой фон */
 .hero {
     background-color: var(--background-color-section1-footer);
+   
+  
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
 }
+
+.hero-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
 /* герой н1 */
 .hero-section {
     color: var(--color-font-hero-address);
@@ -111,6 +175,13 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    width: 696px;
+    outline: 3px solid tomato;
+    margin-bottom: 30px;
+    text-align: center;
+   
+
 }
 /* герой кнопка */
 .hero-btn {
@@ -119,16 +190,43 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
-    display: flex;
+    display: inline-block;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     font-family: inherit;
+    border: 1px solid transparent;
+    min-width: 216px;
+    min-height: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+ 
+   
+  
+
+
 }
 
 /* -----------------------------Секція 2/4 (Перевага)------------------- */
 
 /* заглавие */
+
+.advantage {
+    outline: 3px solid tomato
+}
+
+.container-advantage {
+    display: block;
+}
+
+.advantage-list {
+    display: flex;
+    
+    gap: 30px;
+}
+
+
+
 .advantage-title {
     color: var(--color-font-h2-h3-name);
     font-size: 14px;
@@ -148,13 +246,45 @@ body {
 /* -----------------------Секція 3/4 (Послуги - SERVICES)------------------- */
 
 /* заглавие */
+.container-servis {
+    display: flex;
+    flex-direction: column;
+}
+
+ 
+.services-list {
+    display: flex;
+}
+.servise-section:not( :last-child ){
+    margin-right: 30px;
+}
+
+
+/* .grid-set-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent-main);
+}
+.grid-set-item {
+   flex-basis: calc((100% - (var(--indent-main) * ((var(--items)) - 1))) / var(--items));
+} */
+
+
 .services-title {
     color: var(--color-font-h2-h3-name);
     font-size: 36px;
-    line-height: cflc(42 / 36);
+    line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+
+
+
+
+
+
+
 
 /* --------------------------Секція 4/4 (Команда - TEAM)-------------------- */
 
