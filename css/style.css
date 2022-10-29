@@ -58,7 +58,7 @@ body {
     padding-left: 15px;
     margin: auto;
 
-    outline: 3px solid tomato;    
+       
 }
 
 .section {
@@ -137,6 +137,8 @@ body {
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-contact:hover,
@@ -177,9 +179,9 @@ body {
     text-transform: uppercase;
 
     width: 696px;
-    outline: 3px solid tomato;
+    
     margin-bottom: 30px;
-    text-align: center;
+    
    
 
 }
@@ -211,10 +213,6 @@ body {
 
 /* заглавие */
 
-.advantage {
-    outline: 3px solid tomato
-}
-
 .container-advantage {
     display: block;
 }
@@ -233,6 +231,7 @@ body {
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 /* описание */
@@ -245,6 +244,9 @@ body {
 
 /* -----------------------Секція 3/4 (Послуги - SERVICES)------------------- */
 
+.services {
+    padding-top: 0;
+}
 /* заглавие */
 .container-servis {
     display: flex;
@@ -276,6 +278,7 @@ body {
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 
@@ -293,9 +296,12 @@ body {
     background-color: var(--background-color-team);
 }
 
+
+
 /* цвет фона картинки */
 .team-job-title {
     background-color: var(--background-color-weite);
+    
 }
 
 /* заглавие */
@@ -304,10 +310,23 @@ body {
     font-size: 36px;
     line-height: calc(42 / 36);
     text-align: center;
-    letter-spacing: 0.03em;     
+    letter-spacing: 0.03em;   
+    margin-bottom: 50px;
+
+     
 }
 
-/* имя */
+.team-list {
+    display: flex; 
+    align-items: center;
+    gap: 30px;
+}
+
+.container-team-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/* имя h3 */
 .team-full-name {
     color: var(--color-font-h2-h3-name);
     font-weight: 500;
@@ -315,6 +334,8 @@ body {
     line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
+   
+    margin-bottom: 10px;
 }
 
 /* должность */
@@ -331,12 +352,20 @@ body {
 /* общий цвет фона */
 .footer-sections {
     background-color: var(--background-color-section1-footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
     
+}
+
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
 }
 /* логотип */
 .footer-logo {
     color: var(--button-color-web-second);
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
@@ -348,17 +377,27 @@ body {
 }
 
 /* адресс */
+
+.footer-address {
+    margin-top: 20px;
+}
+
 .address-map {
     color: var(--color-font-hero-address);
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
+    
 }
 
 .address-map:hover,
 .address-map:focus {
     color: var(--button-color-web-second);
+}
+
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;;
 }
 
 /* имеил и тел */
@@ -369,6 +408,7 @@ body {
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em; 
+    
 }
 .footer-contact:hover,
 .footer-contact:focus {
@@ -377,6 +417,8 @@ body {
 
 .footer-info {
     font-style: normal;
+    display: flex;
+    flex-direction: column;
 }
 
 
