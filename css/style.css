@@ -436,7 +436,7 @@ ______________________portfolio________________________________________ */
 .portfolio-filter {
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .page-filter:not(:last-child) {
@@ -493,12 +493,21 @@ ______________________portfolio________________________________________ */
 
 
 
+.gallery-container {
+    padding: 20px 24px;
+    border-left: 1px solid var(--border-content);
+    border-right: 1px solid var(--border-content);
+    border-bottom: 1px solid var(--border-content);
+
+}
+
 /* h2 */
 .gallery-title {
     color: var(--color-font-h2-h3-name);
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 
 /* p */
@@ -510,10 +519,3 @@ ______________________portfolio________________________________________ */
     letter-spacing: 0.03em;
 }
 
-.gallery-container {
-    padding: 20px 24px;
-    border-left: 1px solid var(--border-content);
-    border-right: 1px solid var(--border-content);
-    border-bottom: 1px solid var(--border-content);
-
-}
